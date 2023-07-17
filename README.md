@@ -3,9 +3,11 @@
 This is an example repo to show how to Customize [Catapult](https://github.com/ClarifiedSecurity/catapult) for your organization's or project's needs.
 To use this repo you need to create your own Git project (in a Git server of your choice) and then fill it out with the examples shown here. After that is done fill out `MAKEVAR_CATAPULT_CUSTOMIZER_REPO` in your .makerc-vars to include the customization repo.
 
-**DELETE ALL CUSTOMIZATION FOLDERS AND FILE EXAMPLES THAT YOU WILL NOT BE USING**
+**DELETE ALL CUSTOMIZATION FOLDER AND FILE EXAMPLES THAT YOU WILL NOT BE USING**
 
 The structure of the customization repo is as follows:
+
+## Folders
 
 - `certificates` - Contains the trusted certificate files that will be installed into the catapult container. The certificate format must be base64 and the file name format must be <certificate_name>.crt
 
@@ -24,6 +26,8 @@ The structure of the customization repo is as follows:
 - `scripts` - Contains custom scripts that will be used with the project
 
 - `start-tasks` - Contains scripts that will be ran on the host during container startup. Refer to existing [start-tasks](https://github.com/ClarifiedSecurity/Catapult/tree/main/scripts/start-tasks) for examples.
+
+## Files
 
 - `example.makerc-vars` - When using non-default example.makerc-vars then make sure that it's is also defined in the Catapult Customizer repo because there are helper scripts that will check if your .makerc-vars contains all of the variables from example.makerc-vars.
 
