@@ -1,4 +1,4 @@
-# Catapult Customizer Example repo
+# Catapult Customizer Example
 
 This is an example repo to show how to Customize [Catapult](https://github.com/ClarifiedSecurity/catapult) for your organization's or project's needs.
 To use this repo you need to create your own Git project (in a Git server of your choice) and then fill it out with the examples shown here. After that is done fill out `MAKEVAR_CATAPULT_CUSTOMIZER_REPO` in your .makerc-vars to include the customization repo.
@@ -19,9 +19,9 @@ The structure of the customization repo is as follows:
 
 - `makefiles` - Contains custom .makerc\* files specific to our organization or project. Refer to the default [.makerc](https://github.com/ClarifiedSecurity/Catapult/blob/main/.makerc) file for examples. and the [Makefile](https://github.com/ClarifiedSecurity/Catapult/blob/main/Makefile#L3-L5) for different types of makefile variable extensions that get loaded if they exists.
 
-- `poetry` - Contains custom pyroject.toml and poetry.lock files that will be used to install the Python dependencies. Refer to the defaults [pyproject.toml](https://github.com/ClarifiedSecurity/Catapult/tree/main/defaults) for examples.
+- `poetry` - Contains custom pyroject.toml and poetry.lock files that will be used to install the Python dependencies when building your own image. Refer to the defaults [pyproject.toml](https://github.com/ClarifiedSecurity/catapult/blob/main/defaults/pyproject.toml) for examples.
 
-- `requirements` - Contains different \*.yml files that will be used to install the Ansible roles and collections refer to [Ansible docs](https://docs.ansible.com/ansible/latest/collections_guide/collections_installing.html) or default [requirements](https://github.com/ClarifiedSecurity/Catapult/tree/main/defaults)
+- `requirements` - Contains different \*.yml files that will be used to install the Ansible roles and collections refer to [Ansible docs](https://docs.ansible.com/ansible/latest/collections_guide/collections_installing.html) or default [requirements](https://github.com/ClarifiedSecurity/catapult/blob/main/defaults/requirements.yml)
 
 - `scripts` - Contains custom scripts that will be used with the project
 
@@ -29,6 +29,6 @@ The structure of the customization repo is as follows:
 
 ## Files
 
-- `example.makerc-vars` - When using non-default example.makerc-vars then make sure that it's is also defined in the Catapult Customizer repo because there are helper scripts that will check if your .makerc-vars contains all of the variables from example.makerc-vars.
+- `example.makerc-vars` - When using non-default example.makerc-vars then make sure that it's is also defined in the Catapult Customizer repo because there are helper scripts that will check if your .makerc-vars contains all of the variables based on the example.makerc-vars.
 
 - `start.yml` - In some rare cases you might want to customize the deployment tree of Catapult. For that you can create your own start.yml file and it will be used instead of the default one. Refer to the default [start.yml](https://github.com/ClarifiedSecurity/Catapult/blob/main/defaults/start.yml) as an example.
