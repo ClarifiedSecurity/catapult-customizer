@@ -2,7 +2,7 @@
 
 This is an example [repo](https://github.com/ClarifiedSecurity/catapult-customizer) to show how to Customize [Catapult](https://github.com/ClarifiedSecurity/catapult) for your organization's or project's needs. To use this repo you need to create your own Git project (in a Git server of your choice) and then fill it out with the examples shown here. After that is done fill out `MAKEVAR_CATAPULT_CUSTOMIZER_REPO` in your Catapult's `.makerc-vars` file to include the customizations.
 
-**DELETE ALL CUSTOMIZATION FOLDER AND FILE EXAMPLES THAT YOU WILL NOT BE USING**
+**DELETE ALL CUSTOMIZATION FOLDER AND FILE EXAMPLES THAT YOU WILL NOT BE USING** - Otherwise empty folder will be included overriding the default files.
 
 The structure of the customization repo is as follows:
 
@@ -28,6 +28,6 @@ The structure of the customization repo is as follows:
 
 ## Files
 
-- `example.makerc-vars` - When using non-default .makerc-vars then make sure that example.makerc-vars is also defined in the Catapult Customizer repo because there are helper scripts that will check if your .makerc-vars contains all of the variables based on the example.makerc-vars.
+- `example.makerc-vars` - When using non-default .makerc-vars then make sure that `example.makerc-vars is also defined in the Catapult Customizer repo because there are helper scripts that will check if your .makerc-vars contains all of the variables based on the example.makerc-vars.
 
 - `start.yml` - In some rare cases you might want to customize the deployment tree of Catapult. For that you can create your own start.yml file and it will be used instead of the default one. Refer to the default [start.yml](https://github.com/ClarifiedSecurity/Catapult/blob/main/defaults/start.yml) as an example.
