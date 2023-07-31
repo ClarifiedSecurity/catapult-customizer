@@ -1,7 +1,6 @@
 # Catapult Customizer Example
 
-This is an example repo to show how to Customize [Catapult](https://github.com/ClarifiedSecurity/catapult) for your organization's or project's needs.
-To use this repo you need to create your own Git project (in a Git server of your choice) and then fill it out with the examples shown here. After that is done fill out `MAKEVAR_CATAPULT_CUSTOMIZER_REPO` in your .makerc-vars to include the customization repo.
+This is an example [repo](https://github.com/ClarifiedSecurity/catapult-customizer) to show how to Customize [Catapult](https://github.com/ClarifiedSecurity/catapult) for your organization's or project's needs. To use this repo you need to create your own Git project (in a Git server of your choice) and then fill it out with the examples shown here. After that is done fill out `MAKEVAR_CATAPULT_CUSTOMIZER_REPO` in your Catapult's `.makerc-vars` file to include the customizations.
 
 **DELETE ALL CUSTOMIZATION FOLDER AND FILE EXAMPLES THAT YOU WILL NOT BE USING**
 
