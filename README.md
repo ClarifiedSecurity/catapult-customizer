@@ -16,7 +16,7 @@ The structure of the customization repo is as follows:
 
 - `docker-entrypoints` - Contains custom docker-entrypoint scripts that will ran on container startup. Refer to default [entrypoint](https://github.com/ClarifiedSecurity/Catapult/tree/main/scripts/entrypoints) scripts for examples.
 
-- `makefiles` - Contains custom .makerc\* files specific to our organization or project. Refer to the default [.makerc](https://github.com/ClarifiedSecurity/Catapult/blob/main/.makerc) file for examples. and the [Makefile](https://github.com/ClarifiedSecurity/Catapult/blob/main/Makefile#L3-L5) for different types of makefile variable extensions that get loaded if they exists.
+- `makefiles` - Contains custom .makerc\* files specific to your organization or project. Refer to the default [.makerc](https://github.com/ClarifiedSecurity/Catapult/blob/main/.makerc) file for examples. and the [Makefile](https://github.com/ClarifiedSecurity/Catapult/blob/main/Makefile#L3-L5) for different types of makefile variable extensions that get loaded if they exists.
 
 - `poetry` - Contains custom pyroject.toml and poetry.lock files that will be used to install the Python dependencies when building your own image. Refer to the defaults [pyproject.toml](https://github.com/ClarifiedSecurity/catapult/blob/main/defaults/pyproject.toml) for examples.
 
