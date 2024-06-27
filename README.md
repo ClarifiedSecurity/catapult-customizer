@@ -1,6 +1,6 @@
 # Catapult Customizer Example
 
-This is an example [repo](https://github.com/ClarifiedSecurity/catapult-customizer) to show how to Customize [Catapult](https://github.com/ClarifiedSecurity/catapult) for your organization or teams needs. To use this repo you need to create your own Git project (in a Git server of your choice) and then fill it out with the examples shown here. After that is done fill out `MAKEVAR_CATAPULT_CUSTOMIZER_REPO` in your Catapult's `.makerc-vars` file to include the customizations.
+This is an example [repo](https://github.com/ClarifiedSecurity/catapult-customizer) to show how to Customize [Catapult](https://github.com/ClarifiedSecurity/catapult) for your organization or team needs. To use this repo you need to create your own Git project (in a Git server of your choice) and then fill it out with the examples shown here. After that is done fill out `MAKEVAR_CATAPULT_CUSTOMIZER_REPO` in your Catapult's `.makerc-vars` file to include the customizations.
 
 **DELETE ALL CUSTOMIZATION FOLDER AND FILE EXAMPLES THAT YOU WILL NOT BE USING** - Otherwise empty folder will be included overriding the default files.
 
@@ -18,15 +18,11 @@ The structure of the customization repo is as follows:
 
 - `makefiles` - Contains custom .makerc\* files specific to your organization or project. Refer to the default [.makerc](https://github.com/ClarifiedSecurity/Catapult/blob/main/.makerc) file for examples and the [Makefile](https://github.com/ClarifiedSecurity/Catapult/blob/main/Makefile#L3-L5) for different types of makefiles that get loaded if they exists.
 
-- `requirements` - Contains different \*.yml files that will be used to install the Ansible roles and collections. Refer to [Ansible docs](https://docs.ansible.com/ansible/latest/collections_guide/collections_installing.html) or default [requirements](https://github.com/ClarifiedSecurity/catapult/blob/main/defaults/requirements.yml) for how-to guide or examples.
-
 - `scripts` - Contains custom scripts that can be used with the project. For example with `make` commands
 
 - `start-tasks` - Contains scripts that will be run on the host during container startup. Refer to existing [start-tasks](https://github.com/ClarifiedSecurity/Catapult/tree/main/scripts/start-tasks) for examples.
 
 ## Files
-
-- `example.makerc-vars` - When using non-default .makerc-vars then make sure that `example.makerc-vars is also defined in the Catapult Customizer repo because there are helper scripts that will check if your .makerc-vars contains all of the variables based on the example.makerc-vars.
 
 - `start.yml` - In some rare cases you might want to customize the deployment tree of Catapult. For that you can create your own start.yml file and it will be used instead of the default one. Refer to the default [start.yml](https://github.com/ClarifiedSecurity/Catapult/blob/main/defaults/start.yml) as an example.
 
