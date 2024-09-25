@@ -12,7 +12,7 @@ The structure of the customization repo is as follows:
 
 - `container` - Contains .custom_aliases file that will be copied into the container. Refer to the [.default_aliases](https://github.com/ClarifiedSecurity/Catapult/blob/main/container/home/builder/.default_aliases) file as an example on how to create .custom_aliases.
 
-- `docker` - Contains custom `docker-compose-custom.yml` to add extra environment variables/volumes/etc to the container. Refer to the default [docker-compose-extra.yml](https://github.com/ClarifiedSecurity/catapult/blob/main/defaults/docker-compose-custom.yml) for an example.
+- `docker` - Contains custom `docker-compose-custom.yml` to add extra environment variables/volumes/etc to the container. Refer to the default [docker-compose-custom.yml](https://github.com/ClarifiedSecurity/catapult/blob/main/defaults/docker-compose-custom.yml) & [docker-compose.yml](https://github.com/ClarifiedSecurity/catapult/blob/main/docker/docker-compose.yml) for examples.
 
 - `docker-entrypoints` - Contains custom docker-entrypoint scripts that will run inside the container during `make start`. Refer to default [entrypoint](https://github.com/ClarifiedSecurity/Catapult/tree/main/scripts/entrypoints) scripts for examples.
 
